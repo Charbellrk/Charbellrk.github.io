@@ -1,0 +1,49 @@
+
+.block1{
+    width:500px;
+    height:500px;
+    background-color: rgb(255, 0, 0);}
+
+.blocK{
+width: 50px;
+height: 50px;
+position:relative;
+background-color: blue;
+animation-name: mooving;
+animation-iteration-count:infinite;
+animation-duration: 10s;
+animation-fill-mode: forwards;
+
+}
+.blocK:hover {
+    background-color:brown;
+  
+}
+.m{
+    color:brown;
+}
+@keyframes  mooving {
+    0%{
+        top:0;
+        left:0;
+        
+    }
+    25%{
+        top:0;
+        left:calc(100% - 10px);
+        
+    }
+    50%{
+        top:calc(100% - 10px);
+        left:calc(100% - 10px);
+    }
+    75%{
+        top:calc(100% - 10px);
+        left:0;
+       
+    }
+    100%{
+        top:0;
+        left:0;
+    }
+}
